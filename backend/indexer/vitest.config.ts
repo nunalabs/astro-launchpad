@@ -12,12 +12,9 @@ export default defineConfig({
         'dist/**',
         '**/*.d.ts',
         '**/*.config.*',
-        '**/mockData/**',
         'src/index.ts', // Entry point
-        'api/**', // Vercel handlers
       ],
     },
-    setupFiles: ['./tests/setup.ts'],
     testTimeout: 30000,
     hookTimeout: 30000,
   },
